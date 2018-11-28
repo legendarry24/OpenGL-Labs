@@ -6,22 +6,11 @@ using SharpGL.SceneGraph.Quadrics;
 
 namespace GettingStartedWithSharpGL
 {
-    /// <summary>
-    /// The main form class.
-    /// </summary>
     public partial class SharpGLForm : Form
     {
-        /// <summary>
-        /// Initializes a new instance of the <see cref="SharpGLForm"/> class.
-        /// </summary>
         public SharpGLForm()
         {
             InitializeComponent();
-
-            //  Create a sphere.
-            //Sphere sphere = new Sphere();
-            //sphere.Transformation.TranslateX = 2;
-            //sphere.Transformation.TranslateY = 2;
 
             //  Create a cone.
             Cylinder cone = new Cylinder
@@ -159,17 +148,6 @@ namespace GettingStartedWithSharpGL
                 QuadricDrawStyle = DrawStyle.Fill
             };
 
-            //Cube cube = new Cube
-            //{
-            //    Transformation =
-            //    {
-            //        TranslateX = -2,
-            //        TranslateY = -3,
-            //        TranslateZ = 6
-            //    }
-            //};
-
-
             //  Add them.
             sceneControl1.Scene.SceneContainer.AddChild(topJoin);
             sceneControl1.Scene.SceneContainer.AddChild(topBone);
@@ -229,7 +207,6 @@ namespace GettingStartedWithSharpGL
             if (listBox1.Items.Count > 0)
             {
                 listBox1.SetSelected(0, true);
-                // listBox1_SelectedIndexChanged(this, null);
             }
         }
 
